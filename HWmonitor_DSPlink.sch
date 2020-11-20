@@ -261,10 +261,10 @@ Wire Wire Line
 Wire Wire Line
 	13400 1200 13400 1450
 $Comp
-L Connector:Conn_Coaxial J3
+L Connector:Conn_Coaxial X1
 U 1 1 5FA672A6
 P 14850 1750
-F 0 "J3" H 14950 1725 50  0000 L CNN
+F 0 "X1" H 14950 1725 50  0000 L CNN
 F 1 "Conn_Coaxial" H 14950 1634 50  0000 L CNN
 F 2 "#MyLibrary:Connector_131-3701-301" H 14850 1750 50  0001 C CNN
 F 3 " ~" H 14850 1750 50  0001 C CNN
@@ -573,8 +573,6 @@ Wire Wire Line
 Wire Wire Line
 	5400 2250 5400 2400
 Wire Wire Line
-	5450 1950 5100 1950
-Wire Wire Line
 	5100 1950 5100 2050
 Wire Wire Line
 	5450 1850 4750 1850
@@ -742,7 +740,6 @@ Connection ~ 4400 1750
 Connection ~ 4750 1850
 Wire Wire Line
 	5100 1950 3950 1950
-Connection ~ 5100 1950
 Wire Wire Line
 	3950 1850 4750 1850
 $Comp
@@ -1749,16 +1746,16 @@ Wire Wire Line
 Wire Wire Line
 	12150 3750 11850 3750
 Text Label 11850 3750 0    50   ~ 0
-VOUTA
+VOUTB
 Wire Wire Line
 	14500 3850 14650 3850
 Wire Wire Line
 	13400 3300 13400 3550
 $Comp
-L Connector:Conn_Coaxial J4
+L Connector:Conn_Coaxial X2
 U 1 1 61F80535
 P 14850 3850
-F 0 "J4" H 14950 3825 50  0000 L CNN
+F 0 "X2" H 14950 3825 50  0000 L CNN
 F 1 "Conn_Coaxial" H 14950 3734 50  0000 L CNN
 F 2 "#MyLibrary:Connector_131-3701-301" H 14850 3850 50  0001 C CNN
 F 3 " ~" H 14850 3850 50  0001 C CNN
@@ -1969,16 +1966,16 @@ Wire Wire Line
 Wire Wire Line
 	12150 5850 11850 5850
 Text Label 11850 5850 0    50   ~ 0
-VOUTA
+VOUTC
 Wire Wire Line
 	14500 5950 14650 5950
 Wire Wire Line
 	13400 5400 13400 5650
 $Comp
-L Connector:Conn_Coaxial J5
+L Connector:Conn_Coaxial X3
 U 1 1 61FBE922
 P 14850 5950
-F 0 "J5" H 14950 5925 50  0000 L CNN
+F 0 "X3" H 14950 5925 50  0000 L CNN
 F 1 "Conn_Coaxial" H 14950 5834 50  0000 L CNN
 F 2 "#MyLibrary:Connector_131-3701-301" H 14850 5950 50  0001 C CNN
 F 3 " ~" H 14850 5950 50  0001 C CNN
@@ -2218,16 +2215,16 @@ Wire Wire Line
 Wire Wire Line
 	12150 8000 11850 8000
 Text Label 11850 8000 0    50   ~ 0
-VOUTA
+VOUTD
 Wire Wire Line
 	14500 8100 14650 8100
 Wire Wire Line
 	13400 7550 13400 7800
 $Comp
-L Connector:Conn_Coaxial J6
+L Connector:Conn_Coaxial X4
 U 1 1 61FBE9AB
 P 14850 8100
-F 0 "J6" H 14950 8075 50  0000 L CNN
+F 0 "X4" H 14950 8075 50  0000 L CNN
 F 1 "Conn_Coaxial" H 14950 7984 50  0000 L CNN
 F 2 "#MyLibrary:Connector_131-3701-301" H 14850 8100 50  0001 C CNN
 F 3 " ~" H 14850 8100 50  0001 C CNN
@@ -2663,6 +2660,53 @@ F 1 "TLV70450DBVT" H 8550 3526 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8550 3200 50  0001 C CNN
 F 3 "" H 8550 3200 50  0001 C CNN
 	1    8550 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1950 5450 1950
+Connection ~ 5100 1950
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5FCFB9B1
+P 10950 10100
+F 0 "H1" H 11050 10146 50  0000 L CNN
+F 1 "MountingHole" H 11050 10055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10950 10100 50  0001 C CNN
+F 3 "~" H 10950 10100 50  0001 C CNN
+	1    10950 10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5FCFCB0C
+P 10950 10300
+F 0 "H2" H 11050 10346 50  0000 L CNN
+F 1 "MountingHole" H 11050 10255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10950 10300 50  0001 C CNN
+F 3 "~" H 10950 10300 50  0001 C CNN
+	1    10950 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5FCFDAD4
+P 10950 10500
+F 0 "H3" H 11050 10546 50  0000 L CNN
+F 1 "MountingHole" H 11050 10455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10950 10500 50  0001 C CNN
+F 3 "~" H 10950 10500 50  0001 C CNN
+	1    10950 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5FCFEBB5
+P 10950 10700
+F 0 "H4" H 11050 10746 50  0000 L CNN
+F 1 "MountingHole" H 11050 10655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10950 10700 50  0001 C CNN
+F 3 "~" H 10950 10700 50  0001 C CNN
+	1    10950 10700
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
