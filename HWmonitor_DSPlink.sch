@@ -1315,20 +1315,6 @@ F 4 "FT232RL" H 4900 9450 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_B_Mini J1
-U 1 1 610C42BB
-P 1250 9050
-AR Path="/610C42BB" Ref="J1"  Part="1" 
-AR Path="/60E0A151/610C42BB" Ref="J?"  Part="1" 
-F 0 "J1" H 1307 9517 50  0000 C CNN
-F 1 "Mini USB-B" H 1307 9426 50  0000 C CNN
-F 2 "Connector_USB:USB_Mini-B_Lumberg_2486_01_Horizontal" H 1400 9000 50  0001 C CNN
-F 3 "~" H 1400 9000 50  0001 C CNN
-F 4 "65100516121" H 1250 9050 50  0001 C CNN "MPN"
-	1    1250 9050
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GNDA #PWR09
 U 1 1 610C42C1
 P 5100 10550
@@ -1374,18 +1360,11 @@ Wire Wire Line
 	4000 10500 4700 10500
 Connection ~ 4700 10500
 Wire Wire Line
-	1550 9250 1600 9250
-Wire Wire Line
-	1600 9250 1600 9650
-Wire Wire Line
-	1600 9650 1250 9650
-Wire Wire Line
 	1250 9650 1250 9450
 Wire Wire Line
 	1150 9450 1150 9650
 Wire Wire Line
 	1150 9650 1250 9650
-Connection ~ 1250 9650
 $Comp
 L #MyLibrary:Ferrite_Bead L1
 U 1 1 61171113
@@ -2621,7 +2600,7 @@ F 4 "CC0805MKX7R7BB106" H 8800 4500 50  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 Text Notes 12350 10350 0    126  Italic 25
-HWmonitor & DSPlink debug tool
+HWmonitor & DSPcom debug tool
 $Comp
 L #MyLibrary:TLV70450DBVT U7
 U 1 1 5FBB8E4C
@@ -2889,4 +2868,33 @@ F 3 "" H 3350 8750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3700 8750 3350 8750
+NoConn ~ 4100 9450
+NoConn ~ 4100 9650
+NoConn ~ 4100 9850
+NoConn ~ 5700 10150
+NoConn ~ 5700 10050
+NoConn ~ 5700 9950
+NoConn ~ 5700 9450
+NoConn ~ 5700 9350
+NoConn ~ 5700 9250
+NoConn ~ 5700 9150
+NoConn ~ 5700 9050
+NoConn ~ 5700 8950
+NoConn ~ 2750 5400
+NoConn ~ 8900 3600
+$Comp
+L Connector:USB_B_Mini J1
+U 1 1 610C42BB
+P 1250 9050
+AR Path="/610C42BB" Ref="J1"  Part="1" 
+AR Path="/60E0A151/610C42BB" Ref="J?"  Part="1" 
+F 0 "J1" H 1307 9517 50  0000 C CNN
+F 1 "Mini USB-B" H 1307 9426 50  0000 C CNN
+F 2 "Connector_USB:USB_Mini-B_Lumberg_2486_01_Horizontal" H 1400 9000 50  0001 C CNN
+F 3 "~" H 1400 9000 50  0001 C CNN
+F 4 "65100516121" H 1250 9050 50  0001 C CNN "MPN"
+	1    1250 9050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1550 9250
 $EndSCHEMATC
