@@ -10,7 +10,7 @@ Schematic, PCB project in KiCad and BOM are included in this repository. Device 
 Model of the box optimized for 3D printer you can find here:
 https://www.thingiverse.com/thing:4769601
 
-If you are interested, send me the message, I still have some PCBs left from JLC.PCB. Assembled and tested version is also available.
+If you are interested, send me the message, I still have some PCBs left from JLC.PCB. Assembled and tested version is available too.
 
 
 
