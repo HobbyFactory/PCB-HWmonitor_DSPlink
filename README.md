@@ -3,6 +3,8 @@
 This is a debug tool, for visualizing digital signals from DSP or Microcontroller on Oscilloscope screen. In adition contains USB<->Serial converter to allow debug 
 communication with target device.
 
+![block_diagram](https://github.com/HobbyFactory/PCB-HWmonitor_DSPlink/blob/master/blockd/blockd.svg)
+
 Heart of the device is fast SPI D/A converter AD5324ARMZ, converting 4 channels into analog values, post processed by operational amplifiers. High voltage 8kVrms (ISO78XXDWW) galvanic isolation is provided between all inputs/outputs, to ensure safe debug experience, especially with high voltage power converters. 
 
 Schematic, PCB project in KiCad and BOM are included in this repository. Device does not require any firmware for operation.
